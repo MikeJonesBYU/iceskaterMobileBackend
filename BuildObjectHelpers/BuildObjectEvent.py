@@ -49,23 +49,30 @@ class BuildObjectEvent:
 
     def buildSubEvents(self, namespace):
         try:
-            x = namespace.subEvents
-            list = self.purgeMethods(inspect.getmembers(x))
+            list = namespace.subEvents
             result = []
             for a in list:
-                event = SubEvent(a)
-                event.buildObject()
-                result.append(event)
+                subEvent = SubEvent(a)
+                subEvent.buildObject()
+                result.append(subEvent)
             return result
         except AttributeError:
             return None
 
     def buildQualities(self, namespace):
         try:
-            result = namespace.qualities
+            list = namespace.qualities
+            result = []
+            for a in list:
+                try:
+                    quality = a.type
+                    result.append(quality)
+                except AttributeError:
+                    continue
             return result
         except AttributeError:
             return None
+        #didn't test this
 
     def buildQuantities(self, namespace):
         try:
