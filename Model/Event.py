@@ -1,4 +1,4 @@
-from BuildObjectEvent import BuildObjectEvent as extractor
+from BuildObjectHelpers.BuildObjectEvent import BuildObjectEvent as extractor
 class Event:
     def __init__(self, namespaceObj):
         self.namespaceObj = namespaceObj

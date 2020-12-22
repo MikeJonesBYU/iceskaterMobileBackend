@@ -1,7 +1,7 @@
 import inspect
 
-from Event import Event
-from Sensor import Sensor
+from Model.Event import Event
+from Model.Sensor import Sensor
 
 class BuildObjectSession:
 

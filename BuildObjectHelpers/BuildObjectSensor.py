@@ -1,5 +1,5 @@
 import inspect
-from Reading import Reading
+from Model.Reading import Reading
 class BuildObjectSensor:
 
     def buildSensorID(self, namespace):

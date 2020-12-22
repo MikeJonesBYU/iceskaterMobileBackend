@@ -1,4 +1,4 @@
-from BuildObjectSensor import BuildObjectSensor as extractor
+from BuildObjectHelpers.BuildObjectSensor import BuildObjectSensor as extractor
 
 class Sensor:
     def __init__(self, namespaceObj):

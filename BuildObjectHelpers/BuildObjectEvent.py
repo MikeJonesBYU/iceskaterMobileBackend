@@ -1,7 +1,7 @@
 import inspect
 
-from SubEvent import SubEvent
-from QuantitativeAttribute import QuantitativeAttribute
+from Model.SubEvent import SubEvent
+from Model.QuantitativeAttribute import QuantitativeAttribute
 
 class BuildObjectEvent:
 

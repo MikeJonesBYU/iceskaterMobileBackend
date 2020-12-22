@@ -1,4 +1,4 @@
-from BuildObjectReading import BuildObjectReading as extractor
+from BuildObjectHelpers.BuildObjectReading import BuildObjectReading as extractor
 class Reading:
     def __init__(self, namespaceObj):
         self.namespaceObj = namespaceObj

@@ -1,4 +1,4 @@
-from BuildObjectQuantitativeAttribute import BuildObjectQuantitativeAttribute as extractor
+from BuildObjectHelpers.BuildObjectQuantitativeAttribute import BuildObjectQuantitativeAttribute as extractor
 
 class QuantitativeAttribute:
     def __init__(self, namespaceObj):

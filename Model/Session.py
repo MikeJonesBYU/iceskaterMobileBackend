@@ -1,4 +1,4 @@
-from BuildObjectSession import BuildObjectSession as extractor
+from BuildObjectHelpers.BuildObjectSession import BuildObjectSession as extractor
 
 class Session:
     def __init__(self, namespaceObj):

@@ -1,4 +1,4 @@
-from BuildObjectSubEvent import BuildObjectSubEvent as extractor
+from BuildObjectHelpers.BuildObjectSubEvent import BuildObjectSubEvent as extractor
 
 class SubEvent:
     def __init__(self, namespaceObj):

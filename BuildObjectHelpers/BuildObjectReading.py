@@ -1,6 +1,6 @@
-from MagnetometerReading import MagnetometerReading as Mag
-from GyroscopeReading import GyroscopeReading as Gyro
-from AccelerometerReading import AccelerometerReading as Accel
+from Model.MagnetometerReading import MagnetometerReading as Mag
+from Model.GyroscopeReading import GyroscopeReading as Gyro
+from Model.AccelerometerReading import AccelerometerReading as Accel
 
 class BuildObjectReading:
     def buildTimestamp(self, namespace):

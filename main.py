@@ -1,7 +1,7 @@
 import json
 from types import SimpleNamespace
-from Session import Session
-import inspect
+from Model.Session import Session
+
 
 def main():
     with open('example_session.txt', 'r') as file:
