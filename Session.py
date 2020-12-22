@@ -22,7 +22,7 @@ class Session:
         self.endTime = extractor.buildEndTime(self, self.namespaceObj)
         self.status = extractor.buildStatus(self, self.namespaceObj)
         self.sensors = extractor.buildSensors(self, self.namespaceObj)
-        #self.events =
+        self.events = extractor.buildEvents(self, self.namespaceObj)
         self.deviceID = extractor.buildDeviceID(self, self.namespaceObj)
 
 

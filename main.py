@@ -9,6 +9,7 @@ def main():
         x = json.loads(data, object_hook=lambda d: SimpleNamespace(**d))
         session = Session(x)
         session.buildObject()
+        print("Done")
         # print(session.get_sessionID())
         # print(session.get_athleteID())
         # print(session.get_sport())

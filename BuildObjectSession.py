@@ -1,4 +1,6 @@
 import inspect
+
+from Event import Event
 from Sensor import Sensor
 
 class BuildObjectSession:
@@ -65,7 +67,7 @@ class BuildObjectSession:
             return result
         except AttributeError:
             return None
-
+#---------------------------------------fixme: subevents & qualities missing
     def buildEvents(self, namespace):
         try:
             x = namespace.events
@@ -73,9 +75,9 @@ class BuildObjectSession:
             result = {}
             for a in list:
                 name = a[0]
-                #sensor = Sensor(a[1])
-                sensor.buildObject()
-                result[name] = sensor
+                event = Event(a[1])
+                event.buildObject()
+                result[name] = event
             return result
         except AttributeError:
             return None
