@@ -10,7 +10,7 @@ class Session:
         self.endTime = None
         self.status = None
         self.sensors = None
-        #events
+        self.events = None
         self.deviceID = None
 
 
@@ -21,8 +21,9 @@ class Session:
         self.startTime = extractor.buildStartTime(self, self.namespaceObj)
         self.endTime = extractor.buildEndTime(self, self.namespaceObj)
         self.status = extractor.buildStatus(self, self.namespaceObj)
-        self.deviceID = extractor.buildDeviceID(self, self.namespaceObj)
         self.sensors = extractor.buildSensors(self, self.namespaceObj)
+        #self.events =
+        self.deviceID = extractor.buildDeviceID(self, self.namespaceObj)
 
 
 
@@ -51,6 +52,9 @@ class Session:
 
     def get_sensors(self):
         return self.sensors
+
+    def get_events(self):
+        return self.events
 
     def purgeMethods(self, list):
         new_list = []
