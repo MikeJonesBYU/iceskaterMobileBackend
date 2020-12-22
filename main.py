@@ -14,6 +14,9 @@ def main():
         print(session.get_sport())
         print(session.get_startTime())
         print(session.get_endTime())
+        print(session.get_status())
+        print(session.get_deviceID())
+        print(session.get_sensors())
         # for a in inspect.getmembers(x):
         #     print(a)
 

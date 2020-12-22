@@ -1,4 +1,5 @@
-from BuildObjectMember import BuildObjectMember as extractor
+from BuildObjectSession import BuildObjectSession as extractor
+
 class Session:
     def __init__(self, namespaceObj):
         self.namespaceObj = namespaceObj
@@ -7,6 +8,10 @@ class Session:
         self.sport = None
         self.startTime = None
         self.endTime = None
+        self.status = None
+        self.sensors = None
+        #events
+        self.deviceID = None
 
 
     def buildObject(self):
@@ -15,8 +20,9 @@ class Session:
         self.sport = extractor.buildSport(self, self.namespaceObj)
         self.startTime = extractor.buildStartTime(self, self.namespaceObj)
         self.endTime = extractor.buildEndTime(self, self.namespaceObj)
-
-
+        self.status = extractor.buildStatus(self, self.namespaceObj)
+        self.deviceID = extractor.buildDeviceID(self, self.namespaceObj)
+        self.sensors = extractor.buildSensors(self, self.namespaceObj)
 
 
 
@@ -36,4 +42,21 @@ class Session:
 
     def get_endTime(self):
         return self.endTime
+
+    def get_status(self):
+        return self.status
+
+    def get_deviceID(self):
+        return self.deviceID
+
+    def get_sensors(self):
+        return self.sensors
+
+    def purgeMethods(self, list):
+        new_list = []
+        for el in list:
+            name = el[0]
+            if not "__" in name:
+                new_list.append(el)
+        return new_list
 
