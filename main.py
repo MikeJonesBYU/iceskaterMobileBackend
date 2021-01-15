@@ -1,8 +1,12 @@
 import json
 from types import SimpleNamespace
 from Model.Session import Session
-
-
+from tools.analyzer import Analyzer as tool, Analyzer
+import pickle
+from sklearn.ensemble import RandomForestClassifier
+import sklearn.ensemble._forest
+import pandas as pd
+import numpy as np
 def main():
     with open('example_session.txt', 'r') as file:
         data = file.read()
@@ -10,6 +14,24 @@ def main():
         session = Session(x)
         session.buildObject()
         print("Done")
+        clf = None
+        with open("RF_new.pkl", 'rb') as f:
+            clf = pickle.load(f)
+            f.close()
+        key = next(iter(session.sensors))
+        sensor = session.sensors.get(key)
+        readings = sensor.get_readings()
+        readings = readings[1000:1200]
+        #FIND JUMPS
+        #LOOK AT ONLY THE CERTAIN READINGS
+        #FEED INTO CLF.PREDICT(X)
+
+        #print(readings[0].get_magnetometerReading().get_x())
+        tool = Analyzer()
+        input = tool.preprocess_type(readings)
+        # for reading in input:
+        #     print(reading)
+        print(clf.predict(input))
         # print(session.get_sessionID())
         # print(session.get_athleteID())
         # print(session.get_sport())
@@ -20,16 +42,6 @@ def main():
         # print(session.get_sensors())
         # for a in inspect.getmembers(x):
         #     print(a)
-
-
-
-
-
-
-
-
-
-
 
 
 if __name__ == '__main__':

@@ -14,3 +14,4 @@ class MagnetometerReading:
     def get_z(self):
         return self.z
 
+

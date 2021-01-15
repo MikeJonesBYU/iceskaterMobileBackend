@@ -25,7 +25,15 @@ class Sensor:
         return self.connectionStatus
 
     def get_readings(self):
-        return self.readings
+        list = []
+        result = []
+        for key in self.readings.keys():
+            list.append(key)
+            # list.append(self.readings.get(key).get_timestamp())
+        sorted(list)
+        for val in list:
+            result.append(self.readings.get(val))
+        return result
 
     def purgeMethods(self, list):
         new_list = []

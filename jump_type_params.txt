@@ -1,0 +1,1 @@
+{"timeStamp": "15-09-2020 21:39:16", "arguments": "['--preprocess', '--window_size', '150', '--window_sampling_interval', '5', '--subtract', '--aggregate', 'max', '--verbose', '--data_dir', 'data/raw', '--output_dir', 'data/preprocessed_waist/agg/4', '--retime', '--new_sampling_rate', '104', '--old_sampling_rate', '120']"}
