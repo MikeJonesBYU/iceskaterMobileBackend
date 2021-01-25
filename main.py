@@ -8,7 +8,7 @@ import sklearn.ensemble._forest
 import pandas as pd
 import numpy as np
 def main():
-    with open('example_session.txt', 'r') as file:
+    with open('example_cnp_05.txt', 'r') as file:
         data = file.read()
         x = json.loads(data, object_hook=lambda d: SimpleNamespace(**d))
         session = Session(x)
@@ -21,11 +21,16 @@ def main():
         key = next(iter(session.sensors))
         sensor = session.sensors.get(key)
         readings = sensor.get_readings()
-        readings = readings[1000:1200]
-        #FIND JUMPS
-        #LOOK AT ONLY THE CERTAIN READINGS
-        #FEED INTO CLF.PREDICT(X)
-
+        readings = readings[4100:4300]
+        #Jump Types:
+        #"axel" = 0;
+        #"toe" = 1;
+        #"flip" = 2;
+        #"lutz" = 3;
+        #"loop" = 4;
+        #"sal" = 5;
+        #"half-loop" = 6;
+        #"waltz" = 7;
         #print(readings[0].get_magnetometerReading().get_x())
         tool = Analyzer()
         input = tool.preprocess_type(readings)
