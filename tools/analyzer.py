@@ -255,7 +255,7 @@ class Analyzer:
         half = len(readings)//2
         past = []
         future = []
-        print(self.type_interval)
+        # print(self.type_interval)
         for i in range(1, half, self.type_interval):
             past.extend([
                 f'Accelerometer-X-past-{i}',
@@ -313,7 +313,7 @@ class Analyzer:
                 agg['magnetometer']['z']
             ])
             #print(agg)
-        print(pd.DataFrame([data]))
+        # print(pd.DataFrame([data]))
         return pd.DataFrame([data])
 
     def aggregate_readings(self, readings):
