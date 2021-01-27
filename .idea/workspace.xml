@@ -2,17 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f5aa40c-7b15-4d80-b3e5-1097b10ea444" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/iceskaterMobileBackend.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/iceskaterMobileBackend.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_cnp_04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_cnp_04_jump2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_cnp_05.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_cnp_20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_session.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_session_filtered.txt" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tools/analyzer.py" beforeDir="false" afterPath="$PROJECT_DIR$/tools/analyzer.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_10_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_10.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_12_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_12.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_17_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_17.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_21_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_21.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_22_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_22.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_24_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_24.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_27_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_27.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_28_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_28.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -25,8 +24,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/Session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="268">
+            <state relative-caret-position="98">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Model/Sensor.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="119">
+              <caret line="33" selection-start-line="33" selection-end-line="33" />
             </state>
           </provider>
         </entry>
@@ -34,11 +42,10 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="183">
-              <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+            <state relative-caret-position="408">
+              <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
-                <element signature="e#1521#1533#0" />
               </folding>
             </state>
           </provider>
@@ -234,9 +241,9 @@
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.37833038" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4988864" weight="0.5275311" />
+      <window_info anchor="bottom" id="Find" order="1" weight="0.074600354" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29129663" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4988864" weight="0.19538188" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -438,13 +445,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Sensor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="418">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/jump_type_params.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -507,13 +507,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="268">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Model/Reading.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="799">
@@ -521,13 +514,33 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="98">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Sensor.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python39/Lib/site-packages/sklearn/base.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="183">
-          <caret line="25" column="28" selection-start-line="25" selection-start-column="28" selection-end-line="25" selection-end-column="28" />
+        <state relative-caret-position="408">
+          <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
-            <element signature="e#1521#1533#0" />
           </folding>
         </state>
       </provider>
