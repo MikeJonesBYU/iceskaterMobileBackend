@@ -9,11 +9,6 @@ files = {
             0: "axel"
         }
     },
-    "cnp_17": {
-        "jumps": {
-            0: "axel"
-        }
-    },
     "cnp_21": {
         "jumps": {
             0: "axel"

@@ -18,6 +18,9 @@ jump_types = {
     7: "waltz"
 }
 
+total_jump_count = 0
+total_correct_count = 0
+
 margin = 0
 
 def main():
@@ -31,6 +34,9 @@ def main():
 
 # Runs the given file through the classifier
 def run_test(file_name):
+    global margin
+    global total_jump_count
+    global total_correct_count
     with open('test_files/json_sessions_104/' + file_name + ".txt", 'r') as file:
         data = file.read()
         session = Session(json.loads(data, object_hook=lambda d: SimpleNamespace(**d)))
@@ -41,7 +47,7 @@ def run_test(file_name):
             f.close()
         readings = session.sensors.get(next(iter(session.sensors))).get_readings()
         jump_count = 0
-
+        correct_count = 0;
         print(file_name + ": ")
 
         # Pass each jump in session through the classifier
@@ -62,23 +68,29 @@ def run_test(file_name):
             tool = Analyzer()
             input = tool.preprocess_type(reading_subset)
             jump_count = jump_count + 1
+            total_jump_count = total_jump_count + 1
 
             # print output
-            print_test_results(clf.predict(input), file_name, event_index, jump_count)
-
+            clf_pred = math.trunc(clf.predict(input)[0])
+            jump_type = jump_types.get(clf_pred)
+            formatted_jump_type = "{0:>5}".format(jump_type)
+            correct_pred = file_data.files.get(file_name).get("jumps").get(event_index)
+            print(" " + str(jump_count) + ": " + formatted_jump_type + " | correct: " + str(correct_pred))
+            if jump_type == correct_pred:
+                correct_count = correct_count + 1
+                total_correct_count = total_correct_count + 1
+        print("Correct: " + str(correct_count) + "/" + str(len(session.get_events())))
         print("")
 
-
 def run_all_tests():
+    global total_jump_count
+    global total_correct_count
+
     for file_name in file_data.files:
         run_test(file_name)
-
-def print_test_results(clf_output, file_name, event_index, jump_count):
-    clf_pred = math.trunc(clf_output[0])
-    jump_type = jump_types.get(clf_pred)
-    formatted_jump_type = "{0:>5}".format(jump_type)
-    correct_pred = file_data.files.get(file_name).get("jumps").get(event_index)
-    print(" " + str(jump_count) + ": " + formatted_jump_type + " | correct: " + str(correct_pred))
+    print("")
+    print("Total: " + str(total_correct_count) + "/" + str(total_jump_count))
+    print("")
 
 if __name__ == '__main__':
     main()
