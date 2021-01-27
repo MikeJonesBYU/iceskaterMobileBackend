@@ -2,16 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f5aa40c-7b15-4d80-b3e5-1097b10ea444" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/file_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Session.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Session.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_10_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_10.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_12_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_12.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_17_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_17.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_21_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_21.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_22_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_22.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_24_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_24.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_27_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_27.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_28_json_session.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test_files/json_sessions_104/cnp_28.txt" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -24,8 +18,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/Session.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="98">
-              <caret line="24" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="217">
+              <caret line="60" column="19" lean-forward="true" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSession.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="80" column="25" lean-forward="true" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#14#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -33,8 +39,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Model/Sensor.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="33" selection-start-line="33" selection-end-line="33" />
+            <state relative-caret-position="95">
+              <caret line="27" selection-start-line="27" selection-end-line="36" />
             </state>
           </provider>
         </entry>
@@ -42,11 +48,20 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="408">
-              <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+            <state relative-caret-position="282">
+              <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/file_data.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="85">
+              <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
             </state>
           </provider>
         </entry>
@@ -117,6 +132,9 @@
         <option value="$PROJECT_DIR$/example_cnp_20.txt" />
         <option value="$PROJECT_DIR$/example_cnp_05.txt" />
         <option value="$PROJECT_DIR$/tools/analyzer.py" />
+        <option value="$PROJECT_DIR$/venv/file_data.py" />
+        <option value="$PROJECT_DIR$/Model/Session.py" />
+        <option value="$PROJECT_DIR$/file_data.py" />
         <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
@@ -147,18 +165,7 @@
             <path>
               <item name="iceskaterMobileBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="iceskaterMobileBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="test_files" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iceskaterMobileBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iceskaterMobileBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="test_files" type="462c0819:PsiDirectoryNode" />
-              <item name="json_sessions_104" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iceskaterMobileBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iceskaterMobileBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="tools" type="462c0819:PsiDirectoryNode" />
+              <item name="venv" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -171,10 +178,11 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="settings.editor.selected.configurable" value="Errors" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\Madeleine\Documents\hci\iceskater-backend\iceskaterMobileBackend" />
       <recent name="C:\Users\Travi\OneDrive\Documents\Work\iceskaterMobileBackend\Model" />
       <recent name="C:\Users\Travi\OneDrive\Documents\Work\iceskaterMobileBackend\BuildObjectHelpers" />
     </key>
@@ -242,8 +250,8 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.074600354" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.29129663" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4988864" weight="0.19538188" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20248668" />
+      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4988864" weight="0.20248668" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
@@ -406,16 +414,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSession.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/BuildObjectHelpers/__init__.py" />
     <entry file="file://$PROJECT_DIR$/.gitignore">
       <provider selected="true" editor-type-id="text-editor" />
@@ -500,10 +498,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Event.py">
+    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python39/Lib/site-packages/sklearn/base.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="510">
-          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        <state relative-caret-position="108">
+          <caret line="309" selection-start-line="309" selection-end-line="309" />
         </state>
       </provider>
     </entry>
@@ -514,31 +512,48 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Session.py">
+    <entry file="file://$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSession.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="98">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="289">
+          <caret line="80" column="25" lean-forward="true" selection-start-line="80" selection-start-column="25" selection-end-line="80" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#14#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Model/Sensor.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="33" selection-start-line="33" selection-end-line="33" />
+        <state relative-caret-position="95">
+          <caret line="27" selection-start-line="27" selection-end-line="36" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python39/Lib/site-packages/sklearn/base.py">
+    <entry file="file://$PROJECT_DIR$/Model/Event.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="108">
-          <caret line="309" selection-start-line="309" selection-end-line="309" />
+        <state relative-caret-position="510">
+          <caret line="30" selection-start-line="30" selection-end-line="30" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Model/Session.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="217">
+          <caret line="60" column="19" lean-forward="true" selection-start-line="60" selection-start-column="19" selection-end-line="60" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/file_data.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="32" column="6" selection-start-line="32" selection-start-column="6" selection-end-line="32" selection-end-column="6" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="51" column="33" lean-forward="true" selection-start-line="51" selection-start-column="33" selection-end-line="51" selection-end-column="33" />
+        <state relative-caret-position="282">
+          <caret line="63" column="26" selection-start-line="63" selection-start-column="26" selection-end-line="63" selection-end-column="26" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>

@@ -54,7 +54,11 @@ class Session:
         return self.sensors
 
     def get_events(self):
-        return self.events
+        list = []
+        for event_id in self.events:
+            list.append(self.events.get(event_id))
+        list.sort(key=lambda x: x.startTime, reverse=False)
+        return list
 
     def purgeMethods(self, list):
         new_list = []
