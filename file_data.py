@@ -36,4 +36,16 @@ files = {
             0: "axel"
         }
     },
+    "ak1_17": {
+        "jumps": {
+            0: "flip"
+        }
+    },
+    "al1_04": {
+        "jumps": {
+            0: "flip",
+            1: "flip",
+            2: "axel"
+        }
+    }
 }
