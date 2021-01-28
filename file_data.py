@@ -1,3 +1,5 @@
+
+# data structure that holds the name and correct jump information for each test file.
 files = {
     "cnp_10": {
         "jumps": {
