@@ -21,7 +21,10 @@ jump_types = {
 total_jump_count = 0
 total_correct_count = 0
 
+# change these values to change the tests being run
 margin = 0
+test_files = file_data.files_104
+test_file_path = "test_files/json_sessions_104/"
 
 def main():
 
@@ -38,8 +41,10 @@ def run_test(file_name):
     global margin
     global total_jump_count
     global total_correct_count
+    global test_files
+    global test_file_path
 
-    with open('test_files/json_sessions_104/' + file_name + ".txt", 'r') as file:
+    with open(test_file_path + file_name + ".txt", 'r') as file:
 
         # Open file and extract readings from session object
         data = file.read()
@@ -83,7 +88,7 @@ def run_test(file_name):
             clf_pred = math.trunc(clf.predict(input)[0])
             jump_type = jump_types.get(clf_pred)
             formatted_jump_type = "{0:>5}".format(jump_type)
-            correct_pred = file_data.files.get(file_name).get("jumps").get(event_index)
+            correct_pred = test_files.get(file_name).get("jumps").get(event_index)
             print(" " + str(jump_count) + ": " + formatted_jump_type + " | correct: " + str(correct_pred))
 
             if jump_type == correct_pred:
@@ -97,8 +102,9 @@ def run_test(file_name):
 def run_all_tests():
     global total_jump_count
     global total_correct_count
+    global test_files
 
-    for file_name in file_data.files:
+    for file_name in test_files:
         run_test(file_name)
 
     print("")

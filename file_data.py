@@ -1,6 +1,6 @@
 
 # data structure that holds the name and correct jump information for each test file.
-files = {
+files_104 = {
     "cnp_10": {
         "jumps": {
             0: "axel"
@@ -43,6 +43,31 @@ files = {
             0: "flip",
             1: "flip",
             2: "axel"
+        }
+    }
+}
+
+files_120 = {
+    "cnp_04": {
+        "jumps": {
+            0: "toe"
+        }
+    },
+    "cnp_04_jump2": {
+        "jumps": {
+            0: "lutz"
+        }
+    },
+    "cnp_05": {
+        "jumps": {
+            0: "lutz",
+            1: "lutz"
+        }
+    },
+    "cnp_20": {
+        "jumps": {
+            0: "axel",
+            1: "axel"
         }
     }
 }
