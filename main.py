@@ -22,9 +22,9 @@ total_jump_count = 0
 total_correct_count = 0
 
 # change these values to change the tests being run
-margin = 0
+margin = -10
 test_files = file_data.files_104
-test_file_path = "test_files/json_sessions_104/"
+test_file_path = "test_files/json_sessions/"
 
 def main():
 
