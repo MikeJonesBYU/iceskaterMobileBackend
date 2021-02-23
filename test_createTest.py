@@ -14,9 +14,16 @@ class TestCreateTest(TestCase):
 
     def testak1_09(self):
         filename = "example_ak1_09.txt"
+        # todo: make the windows 150 samples wit hte jump in there.
+        # this has been retimed.
         beg = 2690  # 2729
-        end = 2825  # 2805
-        expected = 2
+        end = 2805  # 2805
+        # ... 135 entries.  should be aggr. using max value.  window size 150, sampling interval 5.
+        # What is Orion's thing doing?  we are using Orion's code.
+        # window size is maybe 155?
+        # 150 / 5 = 30  270 / 30 = 9  and there's 9 reaings per sample.
+        # actualy have 279 entries in vector, so that's 31 readings.
+        expected = 2  # it's a flip.
         prediction = createTest(filename, beg, end, expected)
         self.assertEqual(expected, prediction)
 

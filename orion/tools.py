@@ -7,6 +7,8 @@ from tqdm import tqdm
 def augment_with_window_size(df: pd.DataFrame, window_size: int, window_sample_by: int,
                              subtract: bool = False, verbose: bool = False, aggregate: str = None,
                              filepath: str = None) -> typing.Tuple[typing.Any, np.ndarray]:
+#    result_miki, desired_rows = augment_with_window_size(test_df, 150, 5, True, True, "max", None)
+
     """
     This is the main function to augment the data with it's previous timesteps, for the time series model
 
@@ -26,6 +28,7 @@ def augment_with_window_size(df: pd.DataFrame, window_size: int, window_sample_b
     columns_to_copy = [column_name for column_name in df.columns if "target" not in column_name]
     number_of_additional_frames = window_size // window_sample_by
     additional_columns = []
+    # building the headers for additional_columns
     for (name, multiplier) in [("past", -1), ("future", 1)]:  # past and future frames
         for index in range(1,
                            number_of_additional_frames // 2 + 1):  # don't start at zero for simplicity in reading to others
