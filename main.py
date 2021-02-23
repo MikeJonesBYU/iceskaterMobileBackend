@@ -56,50 +56,5 @@ def create_dataframe_list(readings):
         list.append(innerList)
     return list
 
-def compareFiles():
-    folder = "Comparison_Files/"
-    files = os.listdir("Test_Files")
-    master_file_path = folder + "master_file.txt"
-    if os.path.exists(master_file_path):
-        os.remove(master_file_path)
-    for file in files:
-        filepath = folder + file
-        miki_file_path = "C:/Users/Travi/OneDrive/Documents/Work/miki-iceskater/icesk8ter-miki/Comparison_Files/"
-        file_path_miki =  miki_file_path + file
-        file_data_miki = None
-        file_data_ours = None
-        try:
-            with open(filepath) as our_data:
-                file_data_ours = our_data.read().split(" ")
-            with open(file_path_miki) as miki_data:
-                file_data_miki = miki_data.read().split(" ")
-        except FileNotFoundError as e:
-            print(e)
-            continue
-        file_data_ours.sort()
-        file_data_miki.sort()
-        master_file = open(master_file_path, "a+")
-        printToMaster(file_data_miki, file_data_ours, master_file)
-        if len(file_data_miki) != len(file_data_ours):
-            print(file + " is not the same length as " + miki_file_path)
-            continue
-        #file_data_ours.sort()
-        #file_data_miki.sort()
-
-def printToMaster(file_data_miki, file_data_ours, master_file):
-    smaller = None
-    bigger = None
-    if len(file_data_miki) <= len(file_data_ours):
-        smaller = file_data_miki
-        bigger = file_data_ours
-    else:
-        smaller = file_data_ours
-        bigger = file_data_miki
-
-    for i in range(len(smaller)):
-        val1 = bigger[i]
-        val2 = smaller[i]
-        master_file.write(val1 + "? " + val2 + "\n")
-
 if __name__ == '__main__':
     main()
