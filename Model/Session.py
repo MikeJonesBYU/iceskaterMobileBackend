@@ -14,6 +14,7 @@ class Session:
         self.deviceID = None
 
 
+
     def buildObject(self):
         self.sessionID = extractor.buildSessionID(self, self.namespaceObj)
         self.athleteID = extractor.buildAthleteID(self, self.namespaceObj)
