@@ -3,14 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="0f5aa40c-7b15-4d80-b3e5-1097b10ea444" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_ak1_09.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_ak1_10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_ak1_13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_ak1_14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_cnp_04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_cnp_04_jump2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_cnp_05.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_cnp_20.txt" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -35,8 +27,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-184">
-              <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+            <state relative-caret-position="-51">
+              <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -121,7 +113,7 @@
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-14" />
     <option name="y" value="-14" />
     <option name="width" value="2762" />
@@ -139,16 +131,6 @@
             <path>
               <item name="iceskaterMobileBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="iceskaterMobileBackend" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iceskaterMobileBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iceskaterMobileBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="orion" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="iceskaterMobileBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iceskaterMobileBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="Test_Files" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -180,7 +162,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python tests.Unittests for test_createTest.TestCreateTest">
+  <component name="RunManager" selected="Python tests.Unittests for test_createTest.TestCreateTest.testak1_09">
     <configuration name="main" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="iceskaterMobileBackend" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -287,7 +269,7 @@
     <frame x="-7" y="-7" width="1381" height="885" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.2657758" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2657758" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -670,8 +652,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-184">
-          <caret line="24" lean-forward="true" selection-start-line="24" selection-end-line="24" />
+        <state relative-caret-position="-51">
+          <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
           </folding>
