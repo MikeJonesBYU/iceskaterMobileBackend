@@ -30,7 +30,7 @@ class Sensor:
         for key in self.readings.keys():
             list.append(key)
             # list.append(self.readings.get(key).get_timestamp())
-        sorted(list)
+        list.sort(key = int)
         for val in list:
             result.append(self.readings.get(val))
         return result
