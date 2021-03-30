@@ -166,3 +166,36 @@ class TestCreateTest(TestCase):
         prediction = createTest(filename, beg, end, expected)
         self.assertEqual(expected, prediction)
 
+    def testal1_04_flip(self):
+        filename = "example_al1_04.txt"
+        beg = self.retimed_value(300)  # 315
+        end = self.retimed_value(400)  # 372
+        expected = 2
+        prediction = createTest(filename, beg, end, expected)
+        self.assertEqual(expected, prediction)
+
+    def testal1_04_flip_2(self):
+        filename = "example_al1_04.txt"
+        beg = self.retimed_value(2500)  # 2527
+        end = self.retimed_value(2600)  # 2585
+        expected = 2
+        prediction = createTest(filename, beg, end, expected)
+        self.assertEqual(expected, prediction)
+
+
+    def testcnp_24(self):
+        filename = "example_cnp_24.txt"
+        beg = self.retimed_value(150)  # 192
+        end = self.retimed_value(300)  # 261
+        expected = 0
+        prediction = createTest(filename, beg, end, expected)
+        self.assertEqual(expected, prediction)
+
+    def testcnp_24(self):
+        filename = "example_cnp_24.txt"
+        beg = self.retimed_value(4975)  # 4985
+        end = self.retimed_value(5060)  # 5050
+        expected = 0
+        prediction = createTest(filename, beg, end, expected)
+        self.assertEqual(expected, prediction)
+
