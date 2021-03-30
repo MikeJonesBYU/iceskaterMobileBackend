@@ -22,7 +22,7 @@ class TestCreateTest(TestCase):
         filename = "example_ak1_09.txt"
         # this has been retimed.
         beg = self.retimed_value(2690) # 2729
-        end = self.retimed_value(2805)  # 2805
+        end = self.retimed_value(2805) # 2805
         # ... 135 entries.  should be aggr. using max value.  window size 150, sampling interval 5.
         # 150 / 5 = 30  270 / 30 = 9  and there's 9 reaings per sample.
         # actualy have 279 entries in vector, so that's 31 readings.
@@ -93,3 +93,76 @@ class TestCreateTest(TestCase):
         expected = 0
         prediction = createTest(filename, beg, end, expected)
         self.assertEqual(expected, prediction)
+
+    def testcnp_04(self):
+        filename = "example_cnp_04.txt"
+        beg = self.retimed_value(450)  # 472
+        end = self.retimed_value(600)  # 543
+        expected = 1
+        prediction = createTest(filename, beg, end, expected)
+        self.assertEqual(expected, prediction)
+
+    def testcnp_04lutz(self):
+        filename = "example_cnp_04.txt"
+        beg = self.retimed_value(2900)  # 2919
+        end = self.retimed_value(3000)  # 2986
+        expected = 3
+        prediction = createTest(filename, beg, end, expected)
+        self.assertEqual(expected, prediction)
+
+    def testman_05(self):
+        filename = "example_man_05.txt"
+        beg = self.retimed_value(3400)  # 3410
+        end = self.retimed_value(3500)  # 3475
+        expected = 5
+        prediction = createTest(filename, beg, end, expected)
+        self.assertEqual(expected, prediction)
+
+    def testman_05_toe(self):
+        filename = "example_man_05.txt"
+        beg = self.retimed_value(3500)  # 3589
+        end = self.retimed_value(3700)  # 3652
+        expected = 1
+        prediction = createTest(filename, beg, end, expected)
+        self.assertEqual(expected, prediction)
+
+    def testgaf_06(self):
+        filename = "example_gaf_06.txt"
+        beg = self.retimed_value(1500)  # 1565
+        end = self.retimed_value(1610)  # 1598
+        expected = 5
+        prediction = createTest(filename, beg, end, expected)
+        self.assertEqual(expected, prediction)
+
+    def testgaf_06_sal(self):
+        filename = "example_gaf_06.txt"
+        beg = self.retimed_value(4630)  # 4634
+        end = self.retimed_value(4700)  # 4665
+        expected = 5
+        prediction = createTest(filename, beg, end, expected)
+        self.assertEqual(expected, prediction)
+
+    def testgaf_06_sal_2(self):
+        filename = "example_gaf_06.txt"
+        beg = self.retimed_value(7900)  # 7907
+        end = self.retimed_value(7941)  # 7939
+        expected = 5
+        prediction = createTest(filename, beg, end, expected)
+        self.assertEqual(expected, prediction)
+
+    def testjrd_04_loop(self):
+        filename = "example_jrd_04.txt"
+        beg = self.retimed_value(750)  # 753
+        end = self.retimed_value(810)  # 801
+        expected = 4
+        prediction = createTest(filename, beg, end, expected)
+        self.assertEqual(expected, prediction)
+
+    def testjrd_04_loop_2(self):
+        filename = "example_jrd_04.txt"
+        beg = self.retimed_value(1850)  # 1876
+        end = self.retimed_value(1930)  # 1926
+        expected = 4
+        prediction = createTest(filename, beg, end, expected)
+        self.assertEqual(expected, prediction)
+
