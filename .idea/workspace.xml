@@ -2,10 +2,57 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f5aa40c-7b15-4d80-b3e5-1097b10ea444" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Test_Files/example_al1_04.txt" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Test_Files/example_cnp_24.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test_createTest.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_createTest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_ak1_09.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_ak1_10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_ak1_13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_ak1_14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_ak1_15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_ak1_17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_al1_02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_cnp_04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_cnp_04_jump2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_cnp_05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_cnp_20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_ak1_09.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_ak1_10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_ak1_13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_ak1_14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_ak1_15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_ak1_17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_al1_02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_cnp_04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_cnp_04_jump2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_cnp_05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_cnp_20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_ak1_09.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_ak1_10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_ak1_13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_ak1_14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_ak1_15.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_ak1_17.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_al1_02.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_al1_04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_cnp_04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_cnp_05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_cnp_20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_cnp_24.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_gaf_06.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_gaf_09.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_jrd_04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Test_Files/example_man_05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_ak1_09.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_ak1_10.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_ak1_13.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_ak1_14.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_cnp_04.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_cnp_04_jump2.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_cnp_05.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_cnp_20.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_session.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/example_session_filtered.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/jump_type_params.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -15,11 +62,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/test_createTest.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3332">
-              <caret line="196" column="37" selection-start-line="196" selection-start-column="37" selection-end-line="196" selection-end-column="37" />
+            <state relative-caret-position="103">
+              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
               <folding>
                 <element signature="e#0#29#0" expanded="true" />
               </folding>
@@ -27,81 +74,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test_Files/example_cnp_24.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3803222" selection-start-column="3803222" selection-end-column="3803222" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test_Files/example_al1_04.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1589906" selection-start-column="1589906" selection-end-column="1589906" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test_Files/example_jrd_04.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="951863" selection-start-column="951863" selection-end-column="951863" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test_Files/example_gaf_09.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1901393" selection-start-column="1901393" selection-end-column="1901393" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test_Files/example_gaf_06.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="2958794" selection-start-column="2958794" selection-end-column="2958794" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test_Files/example_man_05.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="3152922" selection-start-column="3152922" selection-end-column="3152922" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test_Files/example_cnp_05.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-2091" />
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Test_Files/example_cnp_04.txt">
-          <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret column="1216226" selection-start-column="1216226" selection-end-column="1216226" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="484">
-              <caret line="34" column="104" selection-start-line="34" selection-start-column="101" selection-end-line="34" selection-end-column="104" />
+            <state relative-caret-position="354">
+              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
               <folding>
                 <element signature="e#0#11#0" expanded="true" />
               </folding>
@@ -150,7 +127,6 @@
         <option value="$PROJECT_DIR$/example_cnp_04_jump2.txt" />
         <option value="$PROJECT_DIR$/example_cnp_20.txt" />
         <option value="$PROJECT_DIR$/example_cnp_05.txt" />
-        <option value="$PROJECT_DIR$/main.py" />
         <option value="$PROJECT_DIR$/Model/Sensor.py" />
         <option value="$PROJECT_DIR$/Test_Files/example_cnp_04.txt" />
         <option value="$PROJECT_DIR$/Test_Files/example_man_05.txt" />
@@ -160,6 +136,7 @@
         <option value="$PROJECT_DIR$/Test_Files/example_al1_04.txt" />
         <option value="$PROJECT_DIR$/Test_Files/example_cnp_24.txt" />
         <option value="$PROJECT_DIR$/test_createTest.py" />
+        <option value="$PROJECT_DIR$/main.py" />
       </list>
     </option>
   </component>
@@ -174,7 +151,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,15 +158,11 @@
               <item name="iceskaterMobileBackend" type="b2602c69:ProjectViewProjectNode" />
               <item name="iceskaterMobileBackend" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="iceskaterMobileBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iceskaterMobileBackend" type="462c0819:PsiDirectoryNode" />
-              <item name="Test_Files" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -315,12 +287,6 @@
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="Unittests_for_test_createTest_TestCreateTest - 2021.03.30 at 11h 00m 23s.xml">
-      <configuration name="Unittests for test_createTest.TestCreateTest" configurationId="tests" />
-    </history-entry>
-    <history-entry file="Unittests_for_test_createTest_TestCreateTest_testal1_04_flip - 2021.03.30 at 11h 06m 31s.xml">
-      <configuration name="Unittests for test_createTest.TestCreateTest.testal1_04_flip" configurationId="tests" />
-    </history-entry>
     <history-entry file="Unittests_for_test_createTest_TestCreateTest_testal1_04_flip_2 - 2021.03.30 at 11h 07m 10s.xml">
       <configuration name="Unittests for test_createTest.TestCreateTest.testal1_04_flip_2" configurationId="tests" />
     </history-entry>
@@ -345,17 +311,23 @@
     <history-entry file="Unittests_for_test_createTest_TestCreateTest - 2021.03.30 at 11h 16m 32s.xml">
       <configuration name="Unittests for test_createTest.TestCreateTest" configurationId="tests" />
     </history-entry>
+    <history-entry file="Unittests_for_test_createTest_TestCreateTest - 2021.03.30 at 12h 47m 45s.xml">
+      <configuration name="Unittests for test_createTest.TestCreateTest" configurationId="tests" />
+    </history-entry>
+    <history-entry file="Unittests_for_test_createTest_TestCreateTest - 2021.04.06 at 08h 23m 30s.xml">
+      <configuration name="Unittests for test_createTest.TestCreateTest" configurationId="tests" />
+    </history-entry>
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1381" height="885" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18856719" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18856719" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32936507" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3227513" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.5251323" />
       <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4988864" weight="0.52910054" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -653,16 +625,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="484">
-          <caret line="34" column="104" selection-start-line="34" selection-start-column="101" selection-end-line="34" selection-end-column="104" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/example_cnp_04.txt">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -670,66 +632,74 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Files/example_cnp_04.txt">
+    <entry file="file://$PROJECT_DIR$/Test_Files/example_cnp_24.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1216226" selection-start-column="1216226" selection-end-column="1216226" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Files/example_man_05.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3152922" selection-start-column="3152922" selection-end-column="3152922" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Files/example_gaf_06.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2958794" selection-start-column="2958794" selection-end-column="2958794" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Files/example_gaf_09.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1901393" selection-start-column="1901393" selection-end-column="1901393" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Files/example_cnp_05.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-2091" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Files/example_jrd_04.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="951863" selection-start-column="951863" selection-end-column="951863" />
+        <state relative-caret-position="64651">
+          <caret column="3803222" selection-start-column="3803222" selection-end-column="3803222" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Test_Files/example_al1_04.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
+        <state relative-caret-position="27013">
           <caret column="1589906" selection-start-column="1589906" selection-end-column="1589906" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Files/example_cnp_24.txt">
+    <entry file="file://$PROJECT_DIR$/Test_Files/example_jrd_04.txt">
       <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="3803222" selection-start-column="3803222" selection-end-column="3803222" />
+        <state relative-caret-position="16167">
+          <caret column="951863" selection-start-column="951863" selection-end-column="951863" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Files/example_gaf_09.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="32317">
+          <caret column="1901393" selection-start-column="1901393" selection-end-column="1901393" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Files/example_gaf_06.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="50286">
+          <caret column="2958794" selection-start-column="2958794" selection-end-column="2958794" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Files/example_man_05.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="53584">
+          <caret column="3152922" selection-start-column="3152922" selection-end-column="3152922" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Files/example_cnp_05.txt">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test_Files/example_cnp_04.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="20672">
+          <caret column="1216226" selection-start-column="1216226" selection-end-column="1216226" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/test_createTest.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3332">
-          <caret line="196" column="37" selection-start-line="196" selection-start-column="37" selection-end-line="196" selection-end-column="37" />
+        <state relative-caret-position="103">
+          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
           <folding>
             <element signature="e#0#29#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="354">
+          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
           </folding>
         </state>
       </provider>
