@@ -1,57 +1,9 @@
 #!/bin/sh
 file="../deployment-package.zip"
-batch_1="../dependency_batch_1.zip"
-batch_2="../dependency_batch_2.zip"
-batch_3="../dependency_batch_3.zip"
-batch_4="../dependency_batch_4.zip"
-folder_batch_1="dependencies_batch_1/"
-folder_batch_2="dependencies_batch_2/"
-folder_batch_3="dependencies_batch_3/"
-folder_batch_4="dependencies_batch_4/"
 
-
-directory="./package"
 if [ -f "$file" ] ; then
     rm "$file"
 fi
-
-if [ -f "$batch_1" ] ; then
-    rm "$batch_1"
-fi
-
-if [ -f "$batch_2" ] ; then
-    rm "$batch_2"
-fi
-
-if [ -f "$batch_3" ] ; then
-    rm "$batch_3"
-fi
-
-if [ -f "$batch_4" ] ; then
-    rm "$batch_4"
-fi
-
-if [ -d "$directory" ] ; then
-    rm -rf "$directory"
-fi
-
-if [ -d "$folder_batch_1" ] ; then
-    rm -rf "$folder_batch_1"
-fi
-
-if [ -d "$folder_batch_2" ] ; then
-    rm -rf "$folder_batch_2"
-fi
-
-if [ -d "$folder_batch_3" ] ; then
-    rm -rf "$folder_batch_3"
-fi
-
-if [ -d "$folder_batch_4" ] ; then
-    rm -rf "$folder_batch_4"
-fi
-
-
 
 echo "Installing Runtime Dependencies into batch directories."
 pip3 install cycler==0.10.0 --no-deps  --upgrade --target ./cycler-dep
@@ -65,16 +17,45 @@ pip3 install scipy==1.3.1 --no-deps  --upgrade --target ./scipy-dep
 pip3 install shap==0.31.0 --no-deps  --upgrade --target ./shap-dep
 pip3 install six==1.12.0 --no-deps  --upgrade --target ./six-dep
 pip3 install tqdm==4.36.1 --no-deps  --upgrade --target ./tqdm-dep
-pip3 install python-dateutil==2.8.0 --no-deps  --upgrade --target ./shap-dep
-pip3 install pytz==2019.3 --no-deps  --upgrade --target ./six-dep
-pip3 install scikit-learn==0.21.3 --no-deps  --upgrade --target ./tqdm-dep
+pip3 install python-dateutil==2.8.0 --no-deps  --upgrade --target ./dateutil-dep
+pip3 install pytz==2019.3 --no-deps  --upgrade --target ./pytz-dep
+pip3 install scikit-learn==0.21.3 --no-deps  --upgrade --target ./scikit-dep
 
 echo "Modifying File Access."
 chmod 644 $(find . -type f)
 chmod 755 $(find . -type d)
 
+echo "Zipping up dependencies."
+zip -FSr ../cycler.zip ./cycler-dep
+zip -FSr ../joblib.zip ./joblib-dep
+zip -FSr ../kiwisolver.zip ./kiwisolver-dep
+zip -FSr ../numpy.zip ./numpy-dep
+zip -FSr ../matplotlib.zip ./matplotlib-dep
+zip -FSr ../pandas.zip ./pandas-dep
+zip -FSr ../pyparsing.zip ./pyparsing-dep
+zip -FSr ../scipy.zip ./scipy-dep
+zip -FSr ../shap.zip ./shap-dep
+zip -FSr ../six.zip ./six-dep
+zip -FSr ../tqdm.zip ./tqdm-dep
+zip -FSr ../dateutil.zip ./dateutil-dep
+zip -FSr ../pytz.zip ./pytz-dep
+zip -FSr ../scikit.zip ./scikit-dep
 
-zip -r ../cycler.zip -r ./cycler-dep
+echo "Cleaning house."
+rm -rf ./cycler-dep
+rm -rf ./joblib-dep
+rm -rf ./kiwisolver-dep
+rm -rf ./numpy-dep
+rm -rf ./matplotlib-dep
+rm -rf ./pandas-dep
+rm -rf ./pyparsing-dep
+rm -rf ./scipy-dep
+rm -rf ./shap-dep
+rm -rf ./six-dep
+rm -rf ./tqdm-dep
+rm -rf ./dateutil-dep
+rm -rf ./pytz-dep
+rm -rf ./scikit-dep
 
 echo "Creating zip deployment files for project."
 zip -g ../deployment-package.zip main.py
