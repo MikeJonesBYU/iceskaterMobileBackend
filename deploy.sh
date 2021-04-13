@@ -54,18 +54,28 @@ fi
 
 
 echo "Installing Runtime Dependencies into batch directories."
-pip3 install --no-deps  --upgrade --target ./dependencies_batch_1 -r requirements_batch_1.txt
-pip3 install --no-deps  --upgrade --target ./dependencies_batch_2 -r requirements_batch_2.txt
-pip3 install --no-deps  --upgrade --target ./dependencies_batch_3 -r requirements_batch_3.txt
-pip3 install --no-deps  --upgrade --target ./dependencies_batch_4 -r requirements_batch_4.txt
+pip3 install cycler==0.10.0 --no-deps  --upgrade --target ./cycler-dep
+pip3 install joblib==0.14.0 --no-deps  --upgrade --target ./joblib-dep
+pip3 install kiwisolver==1.1.0 --no-deps  --upgrade --target ./kiwisolver-dep
+pip3 install numpy==1.17.3 --no-deps  --upgrade --target ./numpy-dep
+pip3 install matplotlib==3.1.1 --no-deps  --upgrade --target ./matplotlib-dep
+pip3 install pandas==0.25.2 --no-deps  --upgrade --target ./pandas-dep
+pip3 install pyparsing==2.4.2 --no-deps  --upgrade --target ./pyparsing-dep
+pip3 install scipy==1.3.1 --no-deps  --upgrade --target ./scipy-dep
+pip3 install shap==0.31.0 --no-deps  --upgrade --target ./shap-dep
+pip3 install six==1.12.0 --no-deps  --upgrade --target ./six-dep
+pip3 install tqdm==4.36.1 --no-deps  --upgrade --target ./tqdm-dep
+pip3 install python-dateutil==2.8.0 --no-deps  --upgrade --target ./shap-dep
+pip3 install pytz==2019.3 --no-deps  --upgrade --target ./six-dep
+pip3 install scikit-learn==0.21.3 --no-deps  --upgrade --target ./tqdm-dep
+
 echo "Modifying File Access."
 chmod 644 $(find . -type f)
 chmod 755 $(find . -type d)
-echo "Creating zip deployment files for dependencies."
-zip -r ../dependency_batch_1.zip -r dependencies_batch_1/
-zip -r ../dependency_batch_2.zip -r dependencies_batch_2/
-zip -r ../dependency_batch_3.zip -r dependencies_batch_3/
-zip -r ../dependency_batch_4.zip -r dependencies_batch_4/
+
+
+zip -r ../cycler.zip -r ./cycler-dep
+
 echo "Creating zip deployment files for project."
 zip -g ../deployment-package.zip main.py
 zip -g ../deployment-package.zip RF_new.pkl
