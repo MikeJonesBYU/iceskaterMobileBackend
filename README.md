@@ -13,7 +13,7 @@ This is the Container Registry which holds our image that the lambda will use to
 Although intimidating Docker is pretty simple, the tricky part is getting it to play nice with our AWS.
 
 ## Building the image using the Dockerfile
-When you get to the ECR section and see the "backend_dependencies" private repo, click on "View push commands" in the top right after you select the repo. This gives you all the instructions you need to build the login, build the Docker image, and push the image to our registry. 
+When you get to the ECR section and see the "backend_dependencies" private repo, click on "View push commands" in the top right after you select the repo. This gives you all the instructions you need to login, build the Docker image, and push the image to our registry. 
 
 ## Testing the container with AWS Lambda
 To then test it go to: https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/event_classifier?tab=code
