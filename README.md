@@ -8,7 +8,7 @@ Don't try to package and zip the project & its dependencies like AWS first sugge
 I've had a hard time figuring this out. Unfortunately it came to the end and I ran out of time. This is what I've learned:
 
 ## Elastic Container Service
-Signin: https://console.aws.amazon.com/ecr/repositories/private/390539340647/backend_dependencies?region=us-east-1
+Signin then go to https://console.aws.amazon.com/ecr/repositories/private/390539340647/backend_dependencies?region=us-east-1
 This is the Container Registry which holds our image that the lambda will use to run our project.
 Although intimidating Docker is pretty simple, the tricky part is getting it to play nice with our AWS.
 
