@@ -1,6 +1,6 @@
 
 # Define function directory
-ARG FUNCTION_DIR="iceskaterMobileBackend/"
+ARG FUNCTION_DIR="/function"
 
 FROM python:buster as build-image
 
