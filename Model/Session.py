@@ -1,5 +1,6 @@
 from BuildObjectHelpers.BuildObjectSession import BuildObjectSession as extractor
 
+
 class Session:
     def __init__(self, namespaceObj):
         self.namespaceObj = namespaceObj
@@ -13,9 +14,8 @@ class Session:
         self.events = None
         self.deviceID = None
 
-
-
     def buildObject(self):
+        print("building object")
         self.sessionID = extractor.buildSessionID(self, self.namespaceObj)
         self.athleteID = extractor.buildAthleteID(self, self.namespaceObj)
         self.sport = extractor.buildSport(self, self.namespaceObj)
@@ -24,9 +24,9 @@ class Session:
         self.status = extractor.buildStatus(self, self.namespaceObj)
         self.sensors = extractor.buildSensors(self, self.namespaceObj)
         self.events = extractor.buildEvents(self, self.namespaceObj)
-        self.deviceID = extractor.buildDeviceID(self, self.namespaceObj)
 
-
+        # No device id in json as of 6/2/2021
+        # self.deviceID = extractor.buildDeviceID(self, self.namespaceObj)
 
 
 
@@ -58,6 +58,7 @@ class Session:
         return self.events
 
     def purgeMethods(self, list):
+        print("why is this being called purgemethods?")
         new_list = []
         for el in list:
             name = el[0]

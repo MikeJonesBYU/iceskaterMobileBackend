@@ -1,5 +1,6 @@
 from BuildObjectHelpers.BuildObjectSensor import BuildObjectSensor as extractor
 
+
 class Sensor:
     def __init__(self, namespaceObj):
         self.namespaceObj = namespaceObj
@@ -11,8 +12,11 @@ class Sensor:
 
     def buildObject(self):
         self.sensorID = extractor.buildSensorID(self, self.namespaceObj)
-        self.sensorLocation = extractor.buildSensorLocation(self, self.namespaceObj)
-        self.connectionStatus = extractor.buildConnectionStatus(self, self.namespaceObj)
+        # No sensorlocation in json as of 6/2/2021
+        # self.sensorLocation = extractor.buildSensorLocation(self, self.namespaceObj)
+
+        # No connectionstatus, there is a "status" in the json but it's on the top level
+        # self.connectionStatus = extractor.buildConnectionStatus(self, self.namespaceObj)
         self.readings = extractor.buildReadings(self, self.namespaceObj)
 
     def get_sensorID(self):
@@ -36,6 +40,7 @@ class Sensor:
         return result
 
     def purgeMethods(self, list):
+        print("WHWHHWHHHYYYYYYYYYYYYYYYYYY")
         new_list = []
         for el in list:
             name = el[0]

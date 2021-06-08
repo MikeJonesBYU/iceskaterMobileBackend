@@ -7,15 +7,31 @@ from Model.Session import Session
 import pickle
 import pandas as pd
 import numpy as np
+from sklearn.ensemble import RandomForestClassifier
+import sklearn
 
 
 def handler(event, context):
-    x = json.loads(event, object_hook=lambda d: SimpleNamespace(**d))
+
+    # event is {athleteID:..., endtime:..., events:..., sensors:..., etc.}
+    # event is already type dict so no need to json.loads
+
+    x = event #json.loads(event, object_hook=lambda d: SimpleNamespace(**d))
     session = Session(x)
     session.buildObject()
-    key = next(iter(session.sensors))
+    print("done building session")
+
+    sensors = session.get_sensors()
+    print(sensors)
+    print(type(sensors))
+    key = next(iter(session.get_sensors())) #next(iter(session.sensors))
+    print("key:")
+    print(key)
     sensor = session.sensors.get(key)
     readings = sensor.get_readings()
+    print("got readings")
+    print(type(readings))
+    print(len(readings))
 
     # readings = readings[beginning:end]
     test_df = pd.DataFrame(create_dataframe_list(readings))
@@ -27,11 +43,20 @@ def handler(event, context):
     center_of_jump = test_df.loc[middle_of_jump]
     garbage, augmented_row = gather_rows_by_sampling(middle_of_jump, center_of_jump, test_df, 5, 150, True, test_df.shape[0], "max")
     input_for_classifier = np.append(center_of_jump, augmented_row)
+
+    print(sklearn.__version__)
+
+    print("opening classifier")
     clf = None
     with open("RF_new.pkl", 'rb') as f:
         clf = pickle.load(f)
         f.close()
+
+    print("successfully unpickled the classifier")
+
     prediction = clf.predict([input_for_classifier])
+    print("got a prediction!")
+
     pred = int(prediction[0])
     return pred
 
