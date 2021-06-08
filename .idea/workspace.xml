@@ -2,91 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f5aa40c-7b15-4d80-b3e5-1097b10ea444" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_ak1_09.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_ak1_10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_ak1_13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_ak1_14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_ak1_15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_ak1_17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_al1_02.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_cnp_04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_cnp_04_jump2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_cnp_05.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/example_cnp_20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_ak1_09.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_ak1_10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_ak1_13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_ak1_14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_ak1_15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_ak1_17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_al1_02.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_cnp_04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_cnp_04_jump2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_cnp_05.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Comparison_Files/mikiexample_cnp_20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_ak1_09.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_ak1_10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_ak1_13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_ak1_14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_ak1_15.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_ak1_17.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_al1_02.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_al1_04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_cnp_04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_cnp_05.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_cnp_20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_cnp_24.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_gaf_06.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_gaf_09.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_jrd_04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Test_Files/example_man_05.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_ak1_09.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_ak1_10.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_ak1_13.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_ak1_14.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_cnp_04.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_cnp_04_jump2.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_cnp_05.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_cnp_20.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_session.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/example_session_filtered.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/jump_type_params.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectEvent.py" beforeDir="false" afterPath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectEvent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectQuantitativeAttribute.py" beforeDir="false" afterPath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectQuantitativeAttribute.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectReading.py" beforeDir="false" afterPath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectReading.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSensor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSession.py" beforeDir="false" afterPath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSession.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSubEvent.py" beforeDir="false" afterPath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSubEvent.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/AccelerometerReading.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/AccelerometerReading.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Event.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Event.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/GyroscopeReading.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/GyroscopeReading.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/MagnetometerReading.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/MagnetometerReading.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Sensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Sensor.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Session.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Session.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/test_createTest.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="103">
-              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-              <folding>
-                <element signature="e#0#29#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/main.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="354">
-              <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-              <folding>
-                <element signature="e#0#11#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -98,76 +34,15 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/BuildObjectMember.py" />
-        <option value="$PROJECT_DIR$/MagnetometerReading.py" />
-        <option value="$PROJECT_DIR$/GyroscopeReading.py" />
-        <option value="$PROJECT_DIR$/AccelerometerReading.py" />
-        <option value="$PROJECT_DIR$/BuildObjectReading.py" />
-        <option value="$PROJECT_DIR$/Reading.py" />
-        <option value="$PROJECT_DIR$/BuildObjectSensor.py" />
-        <option value="$PROJECT_DIR$/Sensor.py" />
-        <option value="$PROJECT_DIR$/Session.py" />
-        <option value="$PROJECT_DIR$/SubEvent.py" />
-        <option value="$PROJECT_DIR$/BuildObjectSubEvent.py" />
-        <option value="$PROJECT_DIR$/BuildObjectSession.py" />
-        <option value="$PROJECT_DIR$/BuildObjectQuantitativeAttribute.py" />
-        <option value="$PROJECT_DIR$/QuantitativeAttribute.py" />
-        <option value="$PROJECT_DIR$/Event.py" />
-        <option value="$PROJECT_DIR$/BuildObjectEvent.py" />
-        <option value="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectEvent.py" />
-        <option value="$PROJECT_DIR$/Model/GyroscopeReading.py" />
-        <option value="$PROJECT_DIR$/jump_type_params.txt" />
-        <option value="$PROJECT_DIR$/Model/MagnetometerReading.py" />
-        <option value="$PROJECT_DIR$/Model/Reading.py" />
-        <option value="$PROJECT_DIR$/tools/analyzer.py" />
-        <option value="$PROJECT_DIR$/example_cnp_04.txt" />
-        <option value="$PROJECT_DIR$/example_cnp_04_jump2.txt" />
-        <option value="$PROJECT_DIR$/example_cnp_20.txt" />
-        <option value="$PROJECT_DIR$/example_cnp_05.txt" />
-        <option value="$PROJECT_DIR$/Model/Sensor.py" />
-        <option value="$PROJECT_DIR$/Test_Files/example_cnp_04.txt" />
-        <option value="$PROJECT_DIR$/Test_Files/example_man_05.txt" />
-        <option value="$PROJECT_DIR$/Test_Files/example_gaf_06.txt" />
-        <option value="$PROJECT_DIR$/Test_Files/example_gaf_09.txt" />
-        <option value="$PROJECT_DIR$/Test_Files/example_jrd_04.txt" />
-        <option value="$PROJECT_DIR$/Test_Files/example_al1_04.txt" />
-        <option value="$PROJECT_DIR$/Test_Files/example_cnp_24.txt" />
-        <option value="$PROJECT_DIR$/test_createTest.py" />
-        <option value="$PROJECT_DIR$/main.py" />
-      </list>
-    </option>
-  </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-14" />
-    <option name="y" value="-14" />
-    <option name="width" value="2762" />
-    <option name="height" value="1770" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="iceskaterMobileBackend" type="b2602c69:ProjectViewProjectNode" />
-              <item name="iceskaterMobileBackend" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="Scope" />
-    </panes>
+  <component name="ProjectId" id="1t79iHo5OH3oAt2eTyqjTklknFS" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/Test_Files" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../Instagram" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
   </component>
@@ -179,18 +54,6 @@
       <recent name="C:\Users\Travi\OneDrive\Documents\Work\iceskaterMobileBackend\Model" />
       <recent name="C:\Users\Travi\OneDrive\Documents\Work\iceskaterMobileBackend\BuildObjectHelpers" />
     </key>
-  </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
   </component>
   <component name="RunManager" selected="Python tests.Unittests for test_createTest.TestCreateTest">
     <configuration name="Unittests for test_createTest.TestCreateTest" type="tests" factoryName="Unittests" temporary="true" nameIsGenerated="true">
@@ -273,6 +136,18 @@
       </list>
     </recent_temporary>
   </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -318,47 +193,19 @@
       <configuration name="Unittests for test_createTest.TestCreateTest" configurationId="tests" />
     </history-entry>
   </component>
-  <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1381" height="885" extended-state="6" />
-    <editor active="true" />
-    <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.18856719" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" weight="0.32936507" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.5251323" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4988864" weight="0.52910054" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5011136" side_tool="true" weight="0.3346561" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout>
-    <layout-to-restore>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.17386723" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Favorites" order="2" side_tool="true" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32936078" />
-      <window_info anchor="bottom" id="Debug" order="3" sideWeight="0.4988864" weight="0.52910054" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" />
-      <window_info anchor="bottom" id="Event Log" order="9" sideWeight="0.5011136" side_tool="true" weight="0.3346561" />
-      <window_info anchor="bottom" id="Python Console" order="10" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-    </layout-to-restore>
+  <component name="WindowStateProjectService">
+    <state x="549" y="188" key="FileChooserDialogImpl" timestamp="1622459415217">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="549" y="188" key="FileChooserDialogImpl/0.0.1536.864@0.0.1536.864" timestamp="1622459415217" />
+    <state x="277" y="76" key="SettingsEditor" timestamp="1622109625168">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="277" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1622109625168" />
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1622569411096">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="431" y="181" width="672" height="678" key="search.everywhere.popup/0.0.1536.864@0.0.1536.864" timestamp="1622569411096" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -370,32 +217,32 @@
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSubEvent.py</url>
-          <line>7</line>
+          <line>8</line>
           <option name="timeStamp" value="34" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSubEvent.py</url>
-          <line>12</line>
+          <line>13</line>
           <option name="timeStamp" value="35" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSubEvent.py</url>
-          <line>14</line>
+          <line>16</line>
           <option name="timeStamp" value="36" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/BuildObjectHelpers/BuildObjectEvent.py</url>
-          <line>52</line>
+          <line>60</line>
           <option name="timeStamp" value="37" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/BuildObjectHelpers/BuildObjectEvent.py</url>
-          <line>51</line>
+          <line>59</line>
           <option name="timeStamp" value="38" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/Model/Sensor.py</url>
-          <line>35</line>
+          <line>39</line>
           <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
@@ -439,270 +286,5 @@
         <evaluation-mode>EXPRESSION</evaluation-mode>
       </expression>
     </expressions>
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/Model/AccelerometerReading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="26" selection-start-column="26" selection-end-column="26" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BuildObjectHelpers/BuildObjectReading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="35" column="8" selection-start-line="35" selection-start-column="8" selection-end-line="35" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#58#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSensor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="8" selection-start-line="4" selection-start-column="8" selection-end-line="4" selection-end-column="8" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/SubEvent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="11" lean-forward="true" selection-start-line="2" selection-start-column="11" selection-end-line="2" selection-end-column="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSubEvent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-18">
-          <caret line="1" selection-start-line="1" selection-end-line="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BuildObjectHelpers/BuildObjectQuantitativeAttribute.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-100">
-          <caret line="4" selection-start-line="4" selection-end-line="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/QuantitativeAttribute.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="33">
-          <caret line="12" selection-start-line="12" selection-end-line="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Event.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="101">
-          <caret line="27" selection-start-line="27" selection-end-line="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSession.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="80" selection-start-line="80" selection-end-line="80" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BuildObjectHelpers/__init__.py" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38-32/Lib/encodings/cp1252.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="374">
-          <caret line="22" selection-start-line="22" selection-end-line="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/BuildObjectHelpers/BuildObjectEvent.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="537">
-          <caret line="74" column="13" selection-start-line="74" selection-start-column="13" selection-end-line="74" selection-end-column="13" />
-          <folding>
-            <element signature="e#0#14#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/GyroscopeReading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="13" selection-start-line="7" selection-start-column="8" selection-end-line="7" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example_session.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret column="1511" selection-start-column="1511" selection-end-column="1511" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/jump_type_params.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="2" selection-start-column="2" selection-end-column="2" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/MagnetometerReading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="15" selection-start-line="15" selection-end-line="15" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Reading.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="339">
-          <caret line="47" column="112" selection-start-line="47" selection-start-column="112" selection-end-line="47" selection-end-column="112" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Session.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" selection-start-line="24" selection-end-line="24" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/tools/analyzer.py" />
-    <entry file="file://$PROJECT_DIR$/example_session_filtered.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example_cnp_04_jump2.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="60899" selection-start-column="60899" selection-end-column="60899" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example_cnp_20.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="840149" selection-start-column="840149" selection-end-column="840149" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example_cnp_05.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="1413964" selection-start-column="1413964" selection-end-column="1413964" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python38/Lib/unittest/case.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="632" selection-start-line="632" selection-end-line="632" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Model/Sensor.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="408">
-          <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/orion/tools.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="6" column="4" selection-start-line="6" selection-start-column="4" selection-end-line="6" selection-end-column="4" />
-          <folding>
-            <element signature="e#0#18#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/example_cnp_04.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="45984" selection-start-column="45984" selection-end-column="45984" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Files/example_cnp_24.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="64651">
-          <caret column="3803222" selection-start-column="3803222" selection-end-column="3803222" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Files/example_al1_04.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="27013">
-          <caret column="1589906" selection-start-column="1589906" selection-end-column="1589906" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Files/example_jrd_04.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="16167">
-          <caret column="951863" selection-start-column="951863" selection-end-column="951863" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Files/example_gaf_09.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="32317">
-          <caret column="1901393" selection-start-column="1901393" selection-end-column="1901393" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Files/example_gaf_06.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="50286">
-          <caret column="2958794" selection-start-column="2958794" selection-end-column="2958794" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Files/example_man_05.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="53584">
-          <caret column="3152922" selection-start-column="3152922" selection-end-column="3152922" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Files/example_cnp_05.txt">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/Test_Files/example_cnp_04.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="20672">
-          <caret column="1216226" selection-start-column="1216226" selection-end-column="1216226" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/test_createTest.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="103">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#29#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="354">
-          <caret line="25" column="24" selection-start-line="25" selection-start-column="24" selection-end-line="25" selection-end-column="24" />
-          <folding>
-            <element signature="e#0#11#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
   </component>
 </project>
