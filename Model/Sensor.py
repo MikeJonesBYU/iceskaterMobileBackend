@@ -28,22 +28,14 @@ class Sensor:
     def get_connectionStatus(self):
         return self.connectionStatus
 
+    # TODO: Does this happen every time get reading is called? Couldn't it be stored somewhere?
     def get_readings(self):
         list = []
         result = []
         for key in self.readings.keys():
             list.append(key)
             # list.append(self.readings.get(key).get_timestamp())
-        list.sort(key = int)
+        list.sort(key=int)
         for val in list:
             result.append(self.readings.get(val))
         return result
-
-    def purgeMethods(self, list):
-        print("WHWHHWHHHYYYYYYYYYYYYYYYYYY")
-        new_list = []
-        for el in list:
-            name = el[0]
-            if not "__" in name:
-                new_list.append(el)
-        return new_list

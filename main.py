@@ -32,19 +32,18 @@ def handler(event, context):
     print("got readings")
     print(type(readings))
     print(len(readings))
+    # print("example reading timestamps:")
+    # print(readings[0].get_timestamp())
+    # print(readings[1].get_timestamp())
+    # print(readings[2].get_timestamp())
+    # print(readings[3].get_timestamp())
 
     # readings = readings[beginning:end]
     test_df = pd.DataFrame(create_dataframe_list(readings))
     test_df.columns = ["Accelerometer X", "Accelerometer Y", "Accelerometer Z", "Gyroscope X", "Gyroscope Y", "Gyroscope Z", "Magnetometer X", "Magnetometer Y", "Magnetometer Z"]
     # find center of jump
 
-    #middle_of_jump = (beginning + (end-beginning)//2)
-    middle_of_jump = 100
-    center_of_jump = test_df.loc[middle_of_jump]
-    garbage, augmented_row = gather_rows_by_sampling(middle_of_jump, center_of_jump, test_df, 5, 150, True, test_df.shape[0], "max")
-    input_for_classifier = np.append(center_of_jump, augmented_row)
-
-    print(sklearn.__version__)
+    pred = []
 
     print("opening classifier")
     clf = None
@@ -54,11 +53,50 @@ def handler(event, context):
 
     print("successfully unpickled the classifier")
 
-    prediction = clf.predict([input_for_classifier])
-    print("got a prediction!")
+    reading_dict = sensor.readings
 
-    pred = int(prediction[0])
+    for id, event in session.get_events().items():
+        print("event id:")
+        print(id)
+        start = event.get_startTime()
+        end = event.get_endTime()
+        middle_of_jump = (start + (end-start)//2)
+
+        print("start, end, middle:")
+        print(start)
+        print(end)
+        print(middle_of_jump)
+
+        found_middle = False
+
+        for i in range(-5, 5):
+            if str(middle_of_jump + i) in reading_dict.keys():
+                middle_of_jump = middle_of_jump + i
+                print("found actual middle:")
+                print(middle_of_jump)
+                found_middle = True
+                break
+
+        middle_index = reading_dict[str(middle_of_jump)].get_sessionIndex()
+        print("middle index:")
+        print(middle_index)
+
+        # TODO: what if we can't find a timestamp?
+        if not found_middle:
+            raise ValueError("can't find middle of jump timestamp")
+
+        center_of_jump = test_df.loc[middle_index]
+        garbage, augmented_row = gather_rows_by_sampling(middle_index, center_of_jump, test_df, 5, 150, True, test_df.shape[0], "max")
+        input_for_classifier = np.append(center_of_jump, augmented_row)
+
+        prediction = clf.predict([input_for_classifier])
+        print("got a prediction!")
+        print(prediction)
+
+        pred.append(int(prediction[0]))
+
     return pred
+
 
 def create_dataframe_list(readings):
     list = []

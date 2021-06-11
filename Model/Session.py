@@ -56,13 +56,3 @@ class Session:
 
     def get_events(self):
         return self.events
-
-    def purgeMethods(self, list):
-        print("why is this being called purgemethods?")
-        new_list = []
-        for el in list:
-            name = el[0]
-            if not "__" in name:
-                new_list.append(el)
-        return new_list
-

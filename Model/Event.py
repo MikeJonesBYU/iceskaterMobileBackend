@@ -48,13 +48,3 @@ class Event:
 
     def get_quantities(self):
         return self.quantities
-
-    def purgeMethods(self, list):
-        print("why is purgemethods being called")
-        new_list = []
-        for el in list:
-            name = el[0]
-            print(name)
-            if not "__" in name:
-                new_list.append(el)
-        return new_list

@@ -29,10 +29,8 @@ class BuildObjectSensor:
     def buildReadings(self, namespace):
         try:
             x = namespace["readings"]
-            # list = self.purgeMethods(inspect.getmembers(x))
             result = {}
             for key, value in x.items():
-                # key = a[0]
                 reading = Reading(value)
                 reading.buildObject()
                 result[key] = reading

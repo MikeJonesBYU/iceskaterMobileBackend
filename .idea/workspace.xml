@@ -2,21 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f5aa40c-7b15-4d80-b3e5-1097b10ea444" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/mikim.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectEvent.py" beforeDir="false" afterPath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectEvent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectQuantitativeAttribute.py" beforeDir="false" afterPath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectQuantitativeAttribute.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectReading.py" beforeDir="false" afterPath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectReading.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSensor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSession.py" beforeDir="false" afterPath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSession.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSubEvent.py" beforeDir="false" afterPath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSubEvent.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/AccelerometerReading.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/AccelerometerReading.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/Event.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Event.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/GyroscopeReading.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/GyroscopeReading.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/MagnetometerReading.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/MagnetometerReading.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Model/Reading.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Reading.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/Sensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Sensor.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Model/Session.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Session.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -239,11 +232,6 @@
           <url>file://$PROJECT_DIR$/BuildObjectHelpers/BuildObjectEvent.py</url>
           <line>59</line>
           <option name="timeStamp" value="38" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/Model/Sensor.py</url>
-          <line>39</line>
-          <option name="timeStamp" value="40" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>
