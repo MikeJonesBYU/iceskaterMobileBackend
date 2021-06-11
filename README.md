@@ -43,7 +43,7 @@ Finally, push to ECR:
 The tag can be left blank, but it can help identify containers afterwards. For example, I've been using version numbers 1.0, 1.1, ... 2.0, etc. Whenever the first number changes, I achieved a stable version that accomplished some milestone. That way I can go back to that version if I need to. 
 For the commands, if a tag is specified when building, the same tag should be used for the rest of the commands. If no tag is specified, "latest" should be used as the tag.
 
-####Debugging tips
+#### Debugging tips
 
 It is somewhat slow of a process to always upload the image to AWS, switch out the container on that end, and test it there.
 There is a faster way to do it locally. You still want to build it with command 1. from above, after which you can do the following:
