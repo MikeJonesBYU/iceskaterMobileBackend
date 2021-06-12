@@ -48,7 +48,7 @@ For the commands, if a tag is specified when building, the same tag should be us
 It is somewhat slow of a process to always upload the image to AWS, switch out the container on that end, and test it there.
 There is a faster way to do it locally. You still want to build it with command 1. from above, after which you can do the following:
 
-1: docker run -p -i -t 9000:8080  backend_dependencies:<tag/latest> 
+1: docker run -t -i -p 9000:8080  backend_dependencies:<tag/latest> 
 
 From a separate terminal:
 
