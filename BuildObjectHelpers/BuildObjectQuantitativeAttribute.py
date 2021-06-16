@@ -1,7 +1,7 @@
 class BuildObjectQuantitativeAttribute:
     def buildType(self, namespace):
         try:
-            result = namespace["type"]
+            result = namespace["label"]
             return result
         except AttributeError:
             print("GOT ATTRIBUTEERROR IN buildtype")

@@ -2,14 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0f5aa40c-7b15-4d80-b3e5-1097b10ea444" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dictionaries/mikim.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectSensor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Event.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Event.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Reading.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Reading.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Sensor.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Sensor.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Model/Session.py" beforeDir="false" afterPath="$PROJECT_DIR$/Model/Session.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectQuantitativeAttribute.py" beforeDir="false" afterPath="$PROJECT_DIR$/BuildObjectHelpers/BuildObjectQuantitativeAttribute.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/main.py" beforeDir="false" afterPath="$PROJECT_DIR$/main.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -195,6 +189,10 @@
       <screen x="0" y="0" width="1536" height="864" />
     </state>
     <state x="277" y="76" key="SettingsEditor/0.0.1536.864@0.0.1536.864" timestamp="1622109625168" />
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog" timestamp="1623492440663">
+      <screen x="0" y="0" width="1536" height="864" />
+    </state>
+    <state x="465" y="258" key="com.intellij.ide.util.TipDialog/0.0.1536.864@0.0.1536.864" timestamp="1623492440663" />
     <state x="431" y="181" width="672" height="678" key="search.everywhere.popup" timestamp="1622569411096">
       <screen x="0" y="0" width="1536" height="864" />
     </state>

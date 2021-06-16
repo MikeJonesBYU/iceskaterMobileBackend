@@ -43,7 +43,7 @@ def handler(event, context):
     test_df.columns = ["Accelerometer X", "Accelerometer Y", "Accelerometer Z", "Gyroscope X", "Gyroscope Y", "Gyroscope Z", "Magnetometer X", "Magnetometer Y", "Magnetometer Z"]
     # find center of jump
 
-    pred = []
+    pred = {}
 
     print("opening classifier")
     clf = None
@@ -93,7 +93,7 @@ def handler(event, context):
         print("got a prediction!")
         print(prediction)
 
-        pred.append(int(prediction[0]))
+        pred[id] = int(prediction[0])
 
     return pred
 
