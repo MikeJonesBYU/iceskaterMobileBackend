@@ -93,9 +93,9 @@ def handler(event, context):
         print("got a prediction!")
         print(prediction)
 
-        pred[id] = int(prediction[0])
+        pred[id] = {"resultIndex": int(prediction[0])}
 
-    return pred
+    return {"classificationResults": pred}
 
 
 def create_dataframe_list(readings):

@@ -9,27 +9,27 @@
       "label": "Peak",
       "quantities": [
         {
-          "type": "TotalRotation",
+          "label": "TotalRotation",
           "units": "degrees",
           "value": -0.29433352159791476
         },
         {
-          "type": "PeakRotationVelocity",
+          "label": "PeakRotationVelocity",
           "units": "degrees per second",
           "value": -749.9861551311935
         },
         {
-          "type": "PeakRotationTime",
+          "label": "PeakRotationTime",
           "units": "seconds",
           "value": 0.000096
         },
         {
-          "type": "Rotations",
+          "label": "Rotations",
           "units": "complete rotations",
           "value": 0.0008175931155497633
         },
         {
-          "type": "Duration",
+          "label": "Duration",
           "units": "seconds",
           "value": 0.000836
         }
