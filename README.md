@@ -1,34 +1,23 @@
-# Perform these to package the deployment for AWS Lambda
+## Quick start Docker/AWS Video Tutorial
+This is a video about Docker, how it is used in the project and an example of how to build/push the image to an AWS lambda function. Email me at jeremysl123@gmail.com with further questions. Also, let me know if you want access to a Udemy course about docker.
+https://youtu.be/tiPr9KrqvjU
 
+## Elastic Container Registry (ECR)
+https://console.aws.amazon.com/ecr/repositories/private/390539340647/backend_dependencies?region=us-east-1
+This is the Container Registry which holds the image that the lambda will use to run our project.
 
-This is the right step: https://towardsdatascience.com/how-to-build-an-aws-lambda-for-data-science-cec62deaf0e9
-Don't try to package and zip the project & its dependencies like AWS first suggests. Unfortunately, the file is way over the 250MB limit & there's other problems. The next best thing is to use a Docker image.
+## Making a new ECR
+In case this project ever needs additional docker image registries, this document might help.
+https://docs.aws.amazon.com/AmazonECR/latest/userguide/getting-started-cli.html
 
-## Notes
-I've had a hard time figuring this out. Unfortunately it came to the end and I ran out of time. This is what I've learned:
-
-## Elastic Container Service
-Signin then go to https://console.aws.amazon.com/ecr/repositories/private/390539340647/backend_dependencies?region=us-east-1
-This is the Container Registry which holds our image that the lambda will use to run our project.
-Although intimidating Docker is pretty simple, the tricky part is getting it to play nice with our AWS.
-
-## Building the image using the Dockerfile
-When you get to the ECR section and see the "backend_dependencies" private repo, click on "View push commands" in the top right after you select the repo. This gives you all the instructions you need to login, build the Docker image, and push the image to our registry. 
-
-## Testing the container with AWS Lambda
-To then test it go to: https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/event_classifier?tab=code
-This is our lambda that runs the event_classifier. Then press "Deploy new image", Select the image that you just pushed up, then go to the "Test" tab and press Test. Resolve all errors. 
-
-I created a test event which has json of the session test of Colorado Springs Skater File AK1_09. I suggest testing with a simplier one first.
-
-## Update June 11 2021, Miki:
-There are functional containers in the ECR now, and they work exactly like Travis specified. For simplicity, I'll list the required commands here:
-
-First, to log in to AWS from the command line (make sure you have aws-cli!):
+## Building and Pushing the Docker Image to AWS:
+First, log in to AWS from the command line (make sure you have aws-cli!):
 
 0: aws ecr get-login-password --region us-east-1 | docker login --username AWS --password-stdin 390539340647.dkr.ecr.us-east-1.amazonaws.com
 
-The login only has to be done once. It will expire after some time (5+ hours?), after which you need to log in again. Next, build the image using docker:
+The login only has to be done once. It will expire after some time (5+ hours?), after which you need to log in again. 
+
+Next, build the image using docker (make sure this is done in the backend folder):
 
 1: docker build -t backend_dependencies:<optional_tag> .
 
@@ -42,6 +31,9 @@ Finally, push to ECR:
 
 The tag can be left blank, but it can help identify containers afterwards. For example, I've been using version numbers 1.0, 1.1, ... 2.0, etc. Whenever the first number changes, I achieved a stable version that accomplished some milestone. That way I can go back to that version if I need to. 
 For the commands, if a tag is specified when building, the same tag should be used for the rest of the commands. If no tag is specified, "latest" should be used as the tag.
+
+To then deploy the image, go to: https://console.aws.amazon.com/lambda/home?region=us-east-1#/functions/event_classifier?tab=code
+This is our lambda that runs the event_classifier. Then press "Deploy new image", Select the image that you just pushed up or get the URI from the ECR.
 
 #### Debugging tips
 
@@ -57,4 +49,4 @@ From a separate terminal:
 The URL is a mystery, but it works. The -d option allows us to specify input, and @test_file_location is the input. For example, if the file is in the same directory, you could just use -d @test.txt. 
 If it's somewhere else, just specify the path: @dir/subdir/test.txt.
 
-Hopefully this helps!
+Hopefully, this helps!
