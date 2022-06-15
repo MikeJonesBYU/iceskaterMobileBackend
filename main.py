@@ -1,115 +1,72 @@
 import json
-from types import SimpleNamespace
+import sys
+import pandas as pd
 from Model.Session import Session
-from tools.analyzer import Analyzer
-import pickle
-import math
-import warnings
-import file_data
-
-jump_types = {
-    0: "axel",
-    1: "toe",
-    2: "flip",
-    3: "lutz",
-    4: "loop",
-    5: "sal",
-    6: "half-loop",
-    7: "waltz"
-}
-
-total_jump_count = 0
-total_correct_count = 0
-
-# change these values to change the tests being run
-margin = -10
-test_files = file_data.files_104
-test_file_path = "test_files/json_sessions/"
-
-def main():
-
-    warnings.filterwarnings("ignore")
-    print("")
-    # Tests can be run all at once, or one at a time.
-    run_all_tests()
-    # run_test("cnp_22")
+from classify import *
 
 
-# Runs the given file through the classifier
-def run_test(file_name):
+def handler(event, context):
 
-    global margin
-    global total_jump_count
-    global total_correct_count
-    global test_files
-    global test_file_path
+    # event is {athleteID:..., end_time:..., events:..., sensors:..., etc.}
+    # event is already type dict so no need to json.loads
 
-    with open(test_file_path + file_name + ".txt", 'r') as file:
+    session = Session(event)
+    session.buildObject()
+    print("done building session")
 
-        # Open file and extract readings from session object
-        data = file.read()
-        session = Session(json.loads(data, object_hook=lambda d: SimpleNamespace(**d)))
-        session.buildObject()
-        readings = session.sensors.get(next(iter(session.sensors))).get_readings()
+    sensors = session.get_sensors()
+    print(sensors)
+    print(type(sensors))
+    key = next(iter(session.get_sensors()))  # next(iter(session.sensors))
+    print("key:")
+    print(key)
+    sensor = session.sensors.get(key)
+    readings = sensor.get_readings()
+    print("got readings")
+    print(type(readings))
+    print(len(readings))
+    # print("example reading timestamps:")
+    # print(readings[0].get_timestamp())
+    # print(readings[1].get_timestamp())
+    # print(readings[2].get_timestamp())
+    # print(readings[3].get_timestamp())
 
-        # Open classifier
-        clf = None
-        with open("RF_new.pkl", 'rb') as f:
-            clf = pickle.load(f)
-            f.close()
+    # readings = readings[beginning:end]
+    test_df = pd.DataFrame(create_dataframe_list(readings))
+    test_df.columns = ["Accelerometer X", "Accelerometer Y", "Accelerometer Z", "Gyroscope X", "Gyroscope Y",
+                       "Gyroscope Z", "Magnetometer X", "Magnetometer Y", "Magnetometer Z"]
+    # find center of jump
 
-        jump_count = 0
-        correct_count = 0;
-        print(file_name + ": ")
+    reading_dict = sensor.readings
+    events = session.get_events()
+    sport = session.sport
 
-        # Pass each jump in session through the classifier
-        for event_index in range(len(session.get_events())):
+    if sport == "SKATING":
+        pred = classify_skating(reading_dict, events, test_df)
+    elif sport == "VOLLEYBALL":
+        pred = classify_volleyball(reading_dict, events, test_df)
+    else:
+        pred = None
 
-            event = session.get_events()[event_index]
-            start_index = 0
-            end_index = 0
+    return {"classificationResults": pred}
 
-            # find the correct indices for the start and end of the jump
-            for reading_index in range(len(readings)):
-                if readings[reading_index].timestamp == event.startTime:
-                    start_index = reading_index
-                if readings[reading_index].timestamp == event.endTime:
-                    end_index = reading_index
 
-            # pass all readings between start and end indices to the classifier (with optional margin)
-            reading_subset = readings[start_index - margin:end_index + margin]
-            tool = Analyzer()
-            input = tool.preprocess_type(reading_subset)
+def create_dataframe_list(readings):
+    df_list = []
+    for reading in readings:
+        innerList = [reading.get_accelerometerReading().x, reading.get_accelerometerReading().y,
+                     reading.get_accelerometerReading().z, reading.get_gyroscopeReading().x,
+                     reading.get_gyroscopeReading().y, reading.get_gyroscopeReading().z,
+                     reading.get_magnetometerReading().x, reading.get_magnetometerReading().y,
+                     reading.get_magnetometerReading().z]
+        df_list.append(innerList)
+    return df_list
 
-            jump_count = jump_count + 1
-            total_jump_count = total_jump_count + 1
 
-            # format and print output
-            clf_pred = math.trunc(clf.predict(input)[0])
-            jump_type = jump_types.get(clf_pred)
-            formatted_jump_type = "{0:>5}".format(jump_type)
-            correct_pred = test_files.get(file_name).get("jumps").get(event_index)
-            print(" " + str(jump_count) + ": " + formatted_jump_type + " | correct: " + str(correct_pred))
+if __name__ == "__main__":
+    filename = sys.argv[1]
 
-            if jump_type == correct_pred:
-                correct_count = correct_count + 1
-                total_correct_count = total_correct_count + 1
+    with open(filename, 'r') as f:
+        e = json.load(f)
 
-        print("Correct: " + str(correct_count) + "/" + str(len(session.get_events())))
-        print("")
-
-# run each test in file_data.py
-def run_all_tests():
-    global total_jump_count
-    global total_correct_count
-    global test_files
-
-    for file_name in test_files:
-        run_test(file_name)
-
-    print("")
-    print("Total: " + str(total_correct_count) + "/" + str(total_jump_count))
-    print("")
-
-if __name__ == '__main__':
-    main()
+    handler(e)

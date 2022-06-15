@@ -10,6 +10,15 @@ class Reading:
         self.logTag = None
         self.sessionIndex = None
 
+    # def __init__(self, timestamp, sensorID, magnetometer, gyroscope, accelerometer, logTag, sessionIndex):
+    #     self.timestamp = timestamp
+    #     self.sensorID = sensorID
+    #     self.magnetometer = magnetometer
+    #     self.gyroscope = gyroscope
+    #     self.accelerometer = accelerometer
+    #     self.logTag = logTag
+    #     self.sessionIndex = sessionIndex
+
     def buildObject(self):
         self.timestamp = extractor.buildTimestamp(self, self.namespaceObj)
         self.sensorID = extractor.buildSensorID(self, self.namespaceObj)

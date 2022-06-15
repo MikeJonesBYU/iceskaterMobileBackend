@@ -1,5 +1,6 @@
 from BuildObjectHelpers.BuildObjectSensor import BuildObjectSensor as extractor
 
+
 class Sensor:
     def __init__(self, namespaceObj):
         self.namespaceObj = namespaceObj
@@ -11,8 +12,11 @@ class Sensor:
 
     def buildObject(self):
         self.sensorID = extractor.buildSensorID(self, self.namespaceObj)
-        self.sensorLocation = extractor.buildSensorLocation(self, self.namespaceObj)
-        self.connectionStatus = extractor.buildConnectionStatus(self, self.namespaceObj)
+        # No sensorlocation in json as of 6/2/2021
+        # self.sensorLocation = extractor.buildSensorLocation(self, self.namespaceObj)
+
+        # No connectionstatus, there is a "status" in the json but it's on the top level
+        # self.connectionStatus = extractor.buildConnectionStatus(self, self.namespaceObj)
         self.readings = extractor.buildReadings(self, self.namespaceObj)
 
     def get_sensorID(self):
@@ -24,21 +28,14 @@ class Sensor:
     def get_connectionStatus(self):
         return self.connectionStatus
 
+    # TODO: Does this happen every time get reading is called? Couldn't it be stored somewhere?
     def get_readings(self):
         list = []
         result = []
         for key in self.readings.keys():
             list.append(key)
             # list.append(self.readings.get(key).get_timestamp())
-        sorted(list)
+        list.sort(key=int)
         for val in list:
             result.append(self.readings.get(val))
         return result
-
-    def purgeMethods(self, list):
-        new_list = []
-        for el in list:
-            name = el[0]
-            if not "__" in name:
-                new_list.append(el)
-        return new_list

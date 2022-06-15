@@ -4,35 +4,37 @@ class BuildObjectSensor:
 
     def buildSensorID(self, namespace):
         try:
-            result = namespace.sensorID
+            result = namespace["sensorID"]
             return result
         except AttributeError:
+            print("GOT ATTRIBUTEERROR IN sensor sensorid")
             return None
 
     def buildSensorLocation(self, namespace):
         try:
-            result = namespace.sensorLocation
+            result = namespace["sensorLocation"]
             return result
         except AttributeError:
+            print("GOT ATTRIBUTEERROR IN sensorlocation")
             return None
 
     def buildConnectionStatus(self, namespace):
         try:
-            result = namespace.connectionStatus
+            result = namespace["connectionStatus"]
             return result
         except AttributeError:
+            print("GOT ATTRIBUTEERROR IN connection")
             return None
 
     def buildReadings(self, namespace):
         try:
-            x = namespace.readings
-            list = self.purgeMethods(inspect.getmembers(x))
+            x = namespace["readings"]
             result = {}
-            for a in list:
-                key = a[0]
-                value = Reading(a[1])
-                value.buildObject()
-                result[key] = value
+            for key, value in x.items():
+                reading = Reading(value)
+                reading.buildObject()
+                result[key] = reading
             return result
         except AttributeError:
+            print("GOT ATTRIBUTEERROR IN buildreadings")
             return None
